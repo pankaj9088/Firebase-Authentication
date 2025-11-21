@@ -1,0 +1,64 @@
+/* load Poppins in your HTML <head> instead OR use @import here:
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*/
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;        /* fill viewport vertically */
+  margin: 0;                /* avoid pushing content off-screen */
+  padding: 2rem;            /* small padding on small viewports */
+  background-size: cover;
+  background-position: center;
+  animation: slider 20s linear infinite;
+}
+
+/* keyframes: same images, but slower (20s) for a less-jumpy transition */
+@keyframes slider {
+  0%   { background-image: url('../components/img1.jpg'); }
+  25%  { background-image: url('../components/img2.jpg'); }
+  50%  { background-image: url('../components/img3.jpg'); }
+  75%  { background-image: url('../components/img4.jpg'); }
+  100% { background-image: url('../components/img5.jpg'); }
+}
+
+.container {
+  background: rgba(245, 243, 243, 0.95); /* slightly translucent to show bg */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  width: 100%;
+  max-width: 360px; /* responsive */
+  text-align: center;
+ 
+}
+
+/* Inputs & buttons remain similar but adapt spacing for small screens */
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  background-color: #4c6ef5;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3b5bdb;
+}
+
+
