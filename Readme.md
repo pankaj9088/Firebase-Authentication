@@ -1,4 +1,4 @@
-# Firebase Auth App
+## Firebase Auth App
 
 A simple authentication web app built using **Firebase Authentication**, HTML, CSS, and JavaScript.  
 This project includes features like **Signup, Login, Logout, and Protected Home Page Access**.
